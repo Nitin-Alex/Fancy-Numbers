@@ -1,2 +1,4 @@
-# Fancy-Numbers
-The project scraps fancy number data from the website, stores it in different excel sheets depending upon the status of these numbers. The count of each status is also provided in the sheet. 
+Ui Path studio community edition is used for this project.
+Internet explorer is used to access the websites.
+Open to improvements.
+All files are to be placed in a single folder and Main file should be used to run the programme.
