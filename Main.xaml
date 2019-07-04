@@ -1,0 +1,199 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="520,2179" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="480,2059" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="458,1935" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:GenericValue" Name="SelectRtoCode" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenBrowser UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="436,537" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" Url="mvd.kerala.gov.in">
+        <ui:OpenBrowser.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,438" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="AllChildern" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'fancy-number'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="8c04d4c32a638216e495d717d427109e" Selector="&lt;webctrl aaname='Fancy Numbers' parentid='sidebar' tag='A' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'number reservation status'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="bb953f0ab919f61e75a82c0f66959b61" Selector="&lt;webctrl aaname='Number Reservation Status' tag='STRONG' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="CloseTab_2" />
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenBrowser.Body>
+      </ui:OpenBrowser>
+      <Sequence DisplayName="RTO List in excel" sap:VirtualizedContainerService.HintSize="436,1107" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'Pop up page MVD'" sap:VirtualizedContainerService.HintSize="414,983" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="8fd3d86836f39e754ff4cb4d2554e3f9" Selector="&lt;html app='chrome.exe' title='Kerala Motor Vehicles Dept : Reservation Status' /&gt;">
+          <ui:BrowserScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,837" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Name="dt1" />
+                  <Variable x:TypeArguments="sd:DataTable" Name="dt2" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetFullText DisplayName="Get Full Text 'RTO List'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="GetFullText_3" IgnoreHidden="False">
+                  <ui:GetFullText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0d496d430c8482d3ec44d9639e786b9e" Selector="&lt;webctrl tag='SELECT' /&gt;" WaitForReady="COMPLETE" />
+                  </ui:GetFullText.Target>
+                  <ui:GetFullText.Text>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[SelectRtoCode]</OutArgument>
+                  </ui:GetFullText.Text>
+                </ui:GetFullText>
+                <ui:GenerateDataTable ColumnSizes="{x:Null}" NewLineSeparator="{x:Null}" Positions="{x:Null}" CSVParsing="True" ColumnSeparators="[string.Format(&quot;{0} &quot;, Environment.NewLine)]" DataTable="[dt1]" DisplayName="Generate Data Table" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="[SelectRtoCode]" UseColumnHeader="True" />
+                <ui:FilterDataTable DataTable="[dt1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt1]" SelectColumnsMode="Keep">
+                  <ui:FilterDataTable.Filters>
+                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                      <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                        <ui:FilterOperationArgument.Column>
+                          <InArgument x:TypeArguments="x:String">[dt1.Columns(0).ToString]</InArgument>
+                        </ui:FilterOperationArgument.Column>
+                        <ui:FilterOperationArgument.Operand>
+                          <InArgument x:TypeArguments="x:String">["RTO"]</InArgument>
+                        </ui:FilterOperationArgument.Operand>
+                      </ui:FilterOperationArgument>
+                    </scg:List>
+                  </ui:FilterDataTable.Filters>
+                  <ui:FilterDataTable.SelectColumns>
+                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                      <x:Null />
+                    </scg:List>
+                  </ui:FilterDataTable.SelectColumns>
+                </ui:FilterDataTable>
+                <ui:FilterDataTable DataTable="[dt1]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[dt2]" SelectColumnsMode="Keep">
+                  <ui:FilterDataTable.Filters>
+                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                      <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                        <ui:FilterOperationArgument.Column>
+                          <InArgument x:TypeArguments="x:String">[dt1.Columns(0).ToString]</InArgument>
+                        </ui:FilterOperationArgument.Column>
+                        <ui:FilterOperationArgument.Operand>
+                          <InArgument x:TypeArguments="x:String">["Enf"]</InArgument>
+                        </ui:FilterOperationArgument.Operand>
+                      </ui:FilterOperationArgument>
+                    </scg:List>
+                  </ui:FilterDataTable.Filters>
+                  <ui:FilterDataTable.SelectColumns>
+                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                      <x:Null />
+                    </scg:List>
+                  </ui:FilterDataTable.SelectColumns>
+                </ui:FilterDataTable>
+                <ui:WriteCell Cell="A1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="314,115" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="Place" WorkbookPath="input.xlsx" />
+                <ui:WriteRange AddHeaders="False" DataTable="[dt2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="314,115" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" StartingCell="A2" WorkbookPath="input.xlsx" />
+              </Sequence>
+            </ActivityAction>
+          </ui:BrowserScope.Body>
+        </ui:BrowserScope>
+      </Sequence>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Read Reservation Status workflow" sap:VirtualizedContainerService.HintSize="436,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="1Read Reservation Status.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+  </Sequence>
+</Activity>
